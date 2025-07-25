@@ -83,6 +83,7 @@ p{
 header{
     max-width: 1140px;
     margin: 0 auto;
+    background-color: #F5F8FF;
 }
 nav{
     justify-content: space-between;
@@ -113,7 +114,8 @@ nav div ul li a {
 .banner{
     justify-content: space-between;
     align-items: last baseline;
-    margin: 120px auto;
+    margin: 0px auto;
+    padding: 120px 0;
 }
 
 .order2{
@@ -127,6 +129,7 @@ nav div ul li a {
     margin: 0 auto;
     flex-direction: column;
     gap: 50px;
+    background-color: #F5F8FF;
 }
 .plant-cards{
     grid-template-columns: repeat(4, 1fr);
@@ -162,7 +165,9 @@ nav div ul li a {
     justify-content: space-between;
     align-items: center;
     gap: 60px;
-    margin: 210px auto;
+    margin: 0 auto;
+    padding: 210px 0;
+    background-color: #F5F8FF;
 }
 
 .flowers ul{
@@ -191,6 +196,7 @@ nav div ul li a {
     flex-direction: column;
     gap: 120px;
     margin: 0 auto;
+    background-color: #F5F8FF;
 }
 
 .box1{
@@ -298,6 +304,7 @@ nav div ul li a {
     gap: 100px;
     padding-top: 50px;
     padding-bottom: 50px;
+    background-color: #F5F8FF;
 }
 
 .footer-menu img{
