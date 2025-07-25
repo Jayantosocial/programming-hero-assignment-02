@@ -1,9 +1,11 @@
 *{
     margin: 0;
     padding: 0;
-    /* background-color: #F5F8FF; */
 }
 
+.bg-color{
+    background-color: #F5F8FF;
+}
 /* font import */
 
 /* noto serif */
@@ -80,10 +82,9 @@ p{
 }
 
 /* header nav section */
-header{
+.header-nav, .header-banner {
     max-width: 1140px;
     margin: 0 auto;
-    background-color: #F5F8FF;
 }
 nav{
     justify-content: space-between;
@@ -166,7 +167,7 @@ nav div ul li a {
     align-items: center;
     gap: 60px;
     margin: 0 auto;
-    padding: 210px 0;
+    padding-top: 210px;
     background-color: #F5F8FF;
 }
 
@@ -178,12 +179,15 @@ nav div ul li a {
 }
 
 .badge{
-    position: absolute;
-    width: 286px;
-    left: 540px;
-    top: 1950px;
+    position: relative;
+    right: -390px;
+    top: -740px;
     background-color: none;
     color: none;
+}
+
+.flowers-texts{
+    margin-top: -200px;
 }
 
 .deal-cards{
@@ -197,6 +201,7 @@ nav div ul li a {
     gap: 120px;
     margin: 0 auto;
     background-color: #F5F8FF;
+    padding-bottom: 120px;
 }
 
 .box1{
@@ -247,7 +252,6 @@ nav div ul li a {
     background-repeat: none;
     background-size: cover;
     background-position: center;
-    margin-top: 120px;
 
 }
 
@@ -358,7 +362,7 @@ nav div ul li a {
     }
     .banner{
         flex-direction: column;
-        margin: 28px 0;
+        padding: 20px 0;
     }
 
     .order1{
@@ -385,13 +389,16 @@ nav div ul li a {
 
     .flowers{
         flex-direction: column;
-        padding: 20px;
-        margin: 42px auto;
+        padding: 50px 20px;
         gap: 18px;
     }
 
     .flowers img{
         width: 100%;
+    }
+
+    .flowers-texts{
+        margin-top: 0px;
     }
 
     .deals{
@@ -420,7 +427,7 @@ nav div ul li a {
 
     .mailbox{
         height: 393px;
-        margin-top: 50px;
+        margin-top: 0px;
     }
 
     .footer-menu{
