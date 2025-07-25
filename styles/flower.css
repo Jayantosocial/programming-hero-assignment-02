@@ -213,4 +213,15 @@ nav div ul li a {
     .plant-cards{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .flowers{
+        flex-direction: column;
+        padding: 20px;
+        margin: 42px auto;
+        gap: 18px;
+    }
+
+    .flowers img{
+        width: 100%;
+    }
 }
