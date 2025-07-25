@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #F5F8FF;
+    /* background-color: #F5F8FF; */
 }
 
 /* font import */
@@ -24,20 +24,26 @@
     display: grid;
 }
 
-body{
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
 span{
     color: #E95A08;
 }
 
-button{
+/* button styles */
+.button {
     width: 100%;
     height: 50px;
     border: none;
     background-color: #E95A08;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.button-02{
+    width: 80px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
     color: white;
     font-size: 16px;
     font-weight: 500;
@@ -74,6 +80,10 @@ p{
 }
 
 /* header nav section */
+header{
+    max-width: 1140px;
+    margin: 0 auto;
+}
 nav{
     justify-content: space-between;
     align-items: center;
@@ -113,6 +123,8 @@ nav div ul li a {
 
 /* our plant sections */
 .plants{
+    max-width: 1140px;
+    margin: 0 auto;
     flex-direction: column;
     gap: 50px;
 }
@@ -146,6 +158,7 @@ nav div ul li a {
 }
 
 .flowers{
+    max-width: 1140px;
     justify-content: space-between;
     align-items: center;
     gap: 60px;
@@ -170,10 +183,117 @@ nav div ul li a {
 
 .deal-cards{
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.deals{
+    max-width: 1140px;
+    flex-direction: column;
+    gap: 120px;
+    margin: 0 auto;
+}
+
+.box1{
+    height: 206px;
+    background-image: url('../assets/deal-bloom.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 10px;
 }
 
 .box2{
-    grid-row-span: 2;
+    grid-row: span 2;
+    background-image: url('../assets/deal-zabo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.box3{
+    background-image: url('../assets/deal-ana.png');
+    height: 206px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.mailbox{
+    height: 533px;
+    background-image: url('../assets/news-letter-bg.png');
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    margin-top: 120px;
+
+}
+
+.mail{
+    width: 830px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.mail-subscribe{
+    width: 100%;
+    gap: none;
+}
+
+.email{
+    border: none;
+    border-radius: none;
+    width: 644px;
+    height: 50px;
+    background-color: white;
+    padding-left: 20px;
+}
+
+.mail-button{
+    width: 186px;
+    height: 50px;
+    background-color: #E95A08;
+    border-radius: none;
+    border: none;
+    color: white;
+}
+
+.overlay-newsletter{
+    background-color: rgba(7, 51, 79, 0.4);
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 10px;
+}
+
+
+.footer-menu{
+    max-width: 1140;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 576px) {
@@ -231,5 +351,34 @@ nav div ul li a {
 
     .flowers img{
         width: 100%;
+    }
+
+    .deals{
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .deal-cards{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    .box1, .box2, .box3{
+        height: 185px;
+    }
+
+    .mail{
+        width: 321px;
+    }
+
+    .email{
+        width: 218px;
+    }
+    .mail-button{
+        width: 103px;
+    }
+
+    .mailbox{
+        height: 393px;
+        margin-top: 50px;
     }
 }
